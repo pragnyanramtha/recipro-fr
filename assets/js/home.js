@@ -51,35 +51,35 @@ const userOnline = (() => {
     const uersOnl = [
         {
             path: "./assets/img/Home/user-4.png",
-            name: "Nguyễn Thị Hiền Vy",
+            name: "Jackson",
         },
         {
             path: "./assets/img/Home/user-2.jpg",
-            name: "Dương Hoàng Phi Long",
+            name: "Kim jong Un",
         },
         {
             path: "./assets/img/Home/user-3.jpg",
-            name: "An Lê",
+            name: "Annie",
         },
         {
             path: "./assets/img/Home/user-4.png",
-            name: "Nhật Hào",
+            name: "Howards",
         },
         {
             path: "./assets/img/Home/user-5.jpg",
-            name: "Thành Luân",
+            name: "Thasmia",
         },
         {
             path: "./assets/img/Home/user-6.jpg",
-            name: "Phát Võ",
+            name: "robert",
         },
         {
             path: "./assets/img/Home/user-7.jpg",
-            name: "Thành An",
+            name: "NFT lord",
         },
         {
             path: "./assets/img/Home/user-4.png",
-            name: "Văn An",
+            name: "Van newman",
         },
     ];
 
@@ -175,7 +175,7 @@ const app = (() => {
                                         ${user.fullName}
                                     </span>
                                     <div class="newsfeed__info-time">
-                                        ${newfeed.time} phút trước
+                                        ${newfeed.time} hours ago
                                         <i class="fas fa-globe-europe"></i>
                                     </div>
                                 </div>
@@ -191,10 +191,10 @@ const app = (() => {
                                         </div>
                                         <div class="newsfeed__info-setting-item__content">
                                             <p class="newsfeed__info-setting-item__text">
-                                                Lưu bài viết
+                                                Save article
                                             </p>
                                             <p class="newsfeed__info-setting-item__title">
-                                                Thêm danh sách vào mục đã lưu.
+                                                Add to a list
                                             </p>
                                         </div>
                                     </li>
@@ -205,7 +205,7 @@ const app = (() => {
                                         </div>
                                         <div class="newsfeed__info-setting-item__content">
                                             <p class="newsfeed__info-setting-item__text">
-                                                Nhúng
+                                                copy link address
                                             </p>
                                         </div> 
                                     </li>
@@ -215,7 +215,7 @@ const app = (() => {
                                         </div>
                                         <div class="newsfeed__info-setting-item__content">
                                             <p class="newsfeed__info-setting-item__text">
-                                                Bật thông báo về bài viết.
+                                                Turn on notifications
                                             </p>
                                         </div>
                                     </li>
@@ -231,7 +231,7 @@ const app = (() => {
                                         </div>
                                         <div class="newsfeed__info-setting-item__content">
                                             <p class="newsfeed__info-setting-item__text">
-                                                Chỉnh sửa bài viết
+                                                Edit post
                                             </p>
                                         </div>
                                     </li>
@@ -245,10 +245,10 @@ const app = (() => {
                                         </div>
                                         <div class="newsfeed__info-setting-item__content">
                                             <p class="newsfeed__info-setting-item__text">
-                                                Chuyển vào thùng rác
+                                                Move to trash
                                             </p>
                                             <p class="newsfeed__info-setting-item__title">
-                                                Các mục trong thùng rác sẽ bị xoá sau 30 ngày.
+                                                Posts will be deleted after 30 days
                                             </p>
                                         </div>
                                     </li>
@@ -259,10 +259,10 @@ const app = (() => {
                                         </div>
                                         <div class="newsfeed__info-setting-item__content">
                                             <p class="newsfeed__info-setting-item__text">
-                                                Ẩn bài viết
+                                                Hide post
                                             </p>
                                             <p class="newsfeed__info-setting-item__title">
-                                                Ẩn bớt các bài viết tương tự
+                                                Hide similar posts
                                             </p>
                                         </div>
                                     </li>
@@ -295,8 +295,8 @@ const app = (() => {
                             <div style="display: ${
                                 cmts.length ? "flex" : "none"
                             }" class="newsfeed__respond-right">
-                                <span>${cmts.length} bình luận</span>
-                                <span>${newfeed.share} lượt chia sẻ</span>
+                                <span>${cmts.length} comment</span>
+                                <span>${newfeed.share} shares</span>
                             </div>
                         </div>
     
@@ -311,15 +311,15 @@ const app = (() => {
                                     : ""
                             } reaction">
                                 <i class="fas fa-thumbs-up newsfeed__action-item-icon"></i>
-                                <span class="newsfeed__action-item-text">Thích</span>
+                                <span class="newsfeed__action-item-text">Like</span>
                             </li>
                             <li class="newsfeed__action-item comment-action">
                                 <i class="far fa-comment-alt newsfeed__action-item-icon"></i>
-                                <span class="newsfeed__action-item-text">Bình luận</span>
+                                <span class="newsfeed__action-item-text">Commentn</span>
                             </li>
                             <li class="newsfeed__action-item">
                                 <i class="fas fa-share newsfeed__action-item-icon"></i>
-                                <span class="newsfeed__action-item-text">Chia sẻ</span>
+                                <span class="newsfeed__action-item-text">Share</span>
                             </li>
                         </ul>
     
@@ -329,7 +329,7 @@ const app = (() => {
                                 <div class="newsfeed__comment-box">
                                     <input data-index=${
                                         newfeed.id
-                                    } type="text" placeholder="Viết bình luận ..." class="newsfeed__comment-input">
+                                    } type="text" placeholder="Share your thoughts" class="newsfeed__comment-input">
                                     <div class="newsfeed__comment-box-right">
                                         <div class="newsfeed__comment-box-icon test">
                                             <i class="far fa-laugh-beam"></i>
@@ -348,10 +348,10 @@ const app = (() => {
                             }" class="newsfeed__commented-box">
                                 <div class="commented-switch">
                                     <div class="show-hide-cmt commented-switch__text">
-                                        <span>Thu gọn</span>
+                                        <span>collapse</span>
                                     </div>
                                     <div class="commented-switch__text">
-                                        Phù hợp nhất
+                                        Best fit
                                         <i class="fad fa-caret-down"></i>
                                     </div>
                                 </div>
@@ -410,9 +410,9 @@ const app = (() => {
                                                                 )
                                                                     ? "active"
                                                                     : ""
-                                                            } commented-box__item-reaction--like">Thích</span>
+                                                            } commented-box__item-reaction--like">Like</span>
                                                             •
-                                                            <span class="commented-box__item-reaction--respond">Phản hồi</span>
+                                                            <span class="commented-box__item-reaction--respond">Dislike</span>
                                                         </div>
                                                         <div style="display: ${
                                                             cmt.like
@@ -490,9 +490,9 @@ const app = (() => {
                                                                             )
                                                                                 ? "active"
                                                                                 : ""
-                                                                        }">Thích</span>
+                                                                        }">Like</span>
                                                                         •
-                                                                        <span class="commented-box__item-reaction--respond">Phản hồi</span>
+                                                                        <span class="commented-box__item-reaction--respond">dislike</span>
                                                                     </div>
                                                                     <div style="display : ${
                                                                         cmt2.like
@@ -542,7 +542,7 @@ const app = (() => {
             } else {
                 htmls = `
                     <div class="newfeed-list--no-tus">
-                        Hiện chưa có bài viết nào.
+                        hidden17
                     </div>
                 `;
             }
@@ -620,7 +620,7 @@ const app = (() => {
                                 </div>
                                 <i class="fas fa-circle"></i> 
                                 <span>
-                                    1 phút
+                                    1 post
                                 </span> 
                             </div>
                         </div>
@@ -704,7 +704,7 @@ const app = (() => {
 
             //mở đóng box
             function showBox() {
-                showOverplay();
+                showOverplay(); 
                 checkSubmit();
             }
             newPostBtns.forEach((newPostBtn) => {
@@ -822,10 +822,10 @@ const app = (() => {
                         );
                         cuteAlert({
                             type: "question",
-                            title: "Xoá bài viết?",
-                            message: "Bạn chắc chắn muốn xoá bài viết này?",
-                            confirmText: "Xoá",
-                            cancelText: "Huỷ",
+                            title: "are u sure?",
+                            message: "Are u sure u wanna do this?",
+                            confirmText: "Confirm",
+                            cancelText: "Cancel",
                         }).then((e) => {
                             if (e) {
                                 newfeeds.forEach((newfeed, index) => {
@@ -864,11 +864,11 @@ const app = (() => {
                             );
                         if (boxCmt.classList.contains("active")) {
                             showHideCmt.querySelector("span").innerHTML =
-                                "Xem thêm";
+                                "hidden18";
                             boxCmt.classList.remove("active");
                         } else {
                             showHideCmt.querySelector("span").innerHTML =
-                                "Thu gọn";
+                                "hidden19";
                             boxCmt.classList.add("active");
                         }
                     }
@@ -877,10 +877,10 @@ const app = (() => {
                         const id = deleteCmt.dataset.index;
                         cuteAlert({
                             type: "question",
-                            title: "Xoá bình luận?",
-                            message: "Bạn chắc chắn muốn xoá bình luận này?",
-                            confirmText: "Xoá",
-                            cancelText: "Huỷ",
+                            title: "are u sure?",
+                            message: "are u sure u wanna do this",
+                            confirmText: "Confirm",
+                            cancelText: "Cancel",
                         }).then((e) => {
                             if (e) {
                                 comments.forEach((comment, index) => {

@@ -26,6 +26,8 @@
 }
 
 .header-left__logo {
+    font-size: 2.4rem;
+    font-weight: 800;
     color: var(--text-color);
     margin-right: 8px;
     align-self: center;
@@ -57,9 +59,9 @@
 .header-left__search-history {
     display: none;
     position: absolute;
-    width: 100%;
+    width: 50%;
     top: 100%;
-    left: 0;
+    left: 140px;
     background-color: var(--white-color);
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
     list-style: none;

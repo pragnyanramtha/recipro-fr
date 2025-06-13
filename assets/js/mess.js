@@ -11,16 +11,16 @@ const app = (() => {
     })
 
     const randomMess = [
-        "Đây là tin nhắn bot tự động số 1",
-        "Đây là tin nhắn bot tự động số 2",
-        "Đây là tin nhắn bot tự động số 3",
-        "Đây là tin nhắn bot tự động số 4",
-        "Đây là tin nhắn bot tự động số 5",
-        "Đây là tin nhắn bot tự động số 6",
-        "Đây là tin nhắn bot tự động số 7",
-        "Đây là tin nhắn bot tự động số 8",
-        "Đây là tin nhắn bot tự động số 9",
-        "Đây là tin nhắn tự động may mắn! Chỉ với xác suất 10%! Have a nice day!"
+        "no worries as i said im really fine!!!",
+        "why dont u leave me alone?",
+        "its okay u can leave",
+        "huh, who are u again?",
+        "it's alright u messaged the wrong person",
+        "seem u later im busy now",
+        "Im participaiting in bloclseblock web3 hackathon",
+        "can't think about u right now",
+        "what? i dont speak english?",
+        "Đamn this is a super rare statement uk"
     ]
 
     return {
@@ -73,7 +73,7 @@ const app = (() => {
                                     </div>
                                     ·
                                     <div class="container-left__item-info-time">
-                                        1 phút
+                                        1 point
                                     </div>
                                 </div>
                             </div>
@@ -99,9 +99,9 @@ const app = (() => {
             $$('.name-mess').forEach(name => name.innerHTML = users[id].fullName) 
             $$('.online').forEach(onl => {
                 if (users[id].onl) {
-                    onl.innerHTML = 'Hoạt động ' + users[id].onl + ' giờ trước'
+                    onl.innerHTML = 'was online ' + users[id].onl + ' ago'
                 } else {
-                    onl.innerHTML = 'Đang hoạt động'
+                    onl.innerHTML = 'online 5 minutes ago'
                 }
             })
 
@@ -263,10 +263,10 @@ const app = (() => {
                 if (deleteBtn) {
                     cuteAlert({
                         type: "question",
-                        title: "Xoá ?",
-                        message: "Bạn chắc chắn muốn xoá tin nhắn này?",
-                        confirmText: "Xoá",
-                        cancelText: "Huỷ"
+                        title: "are u sure?",
+                        message: "Are u sure u wanna do this?",
+                        confirmText: "Confirm",
+                        cancelText: "Cancel"
                     }).then((e)=> {
                         if (e){
                             checkF(deleteBtn, 'deleted')

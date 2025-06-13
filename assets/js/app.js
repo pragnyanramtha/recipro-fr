@@ -69,7 +69,7 @@ if (itemsHeaderRight.length != 0) {
         {
           id: 0,
           path: "./assets/img/Home/avatar-notify-1.jpg",
-          content: `Quản trị viên đã cập nhật phần mô tả của nhóm
+          content: `the admin has updated the group rules, u gotta be
                     <span>Gentle ∆</span>
                     . `,
           time: 3,
@@ -78,20 +78,16 @@ if (itemsHeaderRight.length != 0) {
         {
           id: 1,
           path: "./assets/img/Home/avatar-notify-2.jpg",
-          content: `<span>Lộc Quang Trịnh</span>
-                    và
-                    <span>Nam Trần</span>
-                    cũng đã bình luận về bài viết của
-                    <span>Quốc Trịnh</span>
-                    .`,
+          content: `The_one and TRUMP_SUPPORTER have commented on your post.
+                    `,
           time: 13,
           seen: false,
         },
         {
           id: 2,
           path: "./assets/img/Home/avatar-notify-3.jpg",
-          content: `<span>Quốc Trịnh</span>
-                    đã nhắc đến bạn trong một bình luận.`,
+          content: `<span>KIM_JONG_UN</span>
+                    has mentioned you in a comment.`,
           time: 20,
           seen: false,
         },
@@ -99,7 +95,7 @@ if (itemsHeaderRight.length != 0) {
           id: 3,
           path: "./assets/img/Home/avatar-notify-4.jpg",
           content: `<span>Titan Gaming</span>
-                    có 22 lượt xem mới.`,
+                    has uploaded new photos to his album.`,
           time: 23,
           seen: false,
         },
@@ -107,25 +103,24 @@ if (itemsHeaderRight.length != 0) {
           id: 4,
           path: "./assets/img/Home/avatar-notify-5.jpg",
           content: `<span>Linh Trang</span>
-                    đã bình luận về một ảnh bạn đang theo dõi trong
-                    <span>Ngôi Sao Lấp Lánh Offical</span>
-                    .`,
+                    and others have liked 
+                    <span>Student Union Offical's</span> post.`,
           time: 30,
           seen: true,
         },
         {
           id: 5,
           path: "./assets/img/Home/avatar-notify-6.jpg",
-          content: `<span>Lê Phước</span>
-                    đã bình luận về trạng thái bạn chia sẻ.`,
+          content: `<span>Lê_Chan</span>
+                   recenlty posted a video.`,
           time: 45,
           seen: true,
         },
         {
           id: 6,
           path: "./assets/img/Home/avatar-notify-7.jpg",
-          content: `<span>Nguyễn Quốc Siêu</span>
-                    đã bình luận về liên kết bạn chia sẻ.`,
+          content: `<span>Boruto san</span>
+                    has sent u a friend request.`,
           time: 52,
           seen: true,
         },
@@ -238,9 +233,9 @@ const F = (() => {
   const users = [
     {
       id: 0,
-      firstName: "Thăng",
+      firstName: "lord",
       lastName: "Fly",
-      fullName: "Thăng Fly",
+      fullName: "lord Fly",
       phone: "0123123123",
       password: "123",
       avatar: "./assets/img/Home/thangfly.jpg",
@@ -253,8 +248,8 @@ const F = (() => {
     {
       id: 1,
       firstName: "",
-      lastName: "FAP TV",
-      fullName: "FAP TV",
+      lastName: "Freight AP TV",
+      fullName: "Freight AP TV",
       phone: "0123123124",
       password: "123",
       avatar: "./assets/img/Home/faptv.jpg",
@@ -284,7 +279,7 @@ const F = (() => {
       idUser: 0,
       time: 1,
       bg: "./assets/img/Home/thangfly-bg.jpg",
-      content: "Đời người ngắn lắm ...",
+      content: "Life is too short, consider donating blood to others at this time",
       like: 6800,
       cmt: 55,
       share: 121,
@@ -295,7 +290,7 @@ const F = (() => {
       idUser: 1,
       time: 4,
       bg: "./assets/img/Home/faptv-bg.jpg",
-      content: "Thời đi học ai mà không có mối tình đầu phải không?",
+      content: "Guys i made a new nft anyone interested in buying?",
       like: 2300,
       cmt: 52,
       share: 82,
@@ -307,7 +302,7 @@ const F = (() => {
       time: 7,
       bg: "./assets/img/Home/meow-bg.jpg",
       content:
-        "Dạo này bị chai pin rồi nên sạc mấy tiếng chưa đầy 🙄 Nào đầy pin thì kiu Trẫm dậy nha Sen 😍.",
+        "Ukraine needs ur help, please donate to this wallet ###-###-###-### , directy from u to us , no middle men",
       like: 1200,
       cmt: 42,
       share: 21,
@@ -320,7 +315,7 @@ const F = (() => {
       id: 0,
       idUser: 0,
       idPost: 1,
-      content: "Thật là dễ thương!",
+      content: "Here is 3 bitcoin, Hope this helps",
       like: 252,
       sub: false,
       deleted: false,
@@ -329,7 +324,7 @@ const F = (() => {
       id: 1,
       idUser: 1,
       idPost: 1,
-      content: "Thật là dễ thương 2!",
+      content: "Thats a really nice nft, whats it worth?",
       like: 134,
       sub: false,
       deleted: false,
@@ -338,8 +333,7 @@ const F = (() => {
       id: 2,
       idUser: 1,
       idPost: 0,
-      content:
-        "Thật là dễ thương 3! Mong mọi điều tốt đẹp sẽ đến với bạn sớm nhất có thể. Cảm ơn vì tất cả :3",
+      content: "Thanks!, i'm thinking to sell it for 1 bitcoin",
       like: 152,
       sub: false,
       deleted: false,
@@ -348,7 +342,7 @@ const F = (() => {
       id: 3,
       idUser: 0,
       idPost: 1,
-      content: "Cảm ơn rất nhiều!",
+      content:"Thats a great price!!!, i'm also gonna give u some doge , keep making such nft's ",
       like: 12,
       sub: true,
       deleted: false,
@@ -358,7 +352,7 @@ const F = (() => {
       id: 4,
       idUser: 1,
       idPost: 1,
-      content: "Cảm ơn rất nhiều 2!",
+      content: "My pleasure",
       like: 11,
       sub: true,
       deleted: false,
@@ -369,13 +363,13 @@ const F = (() => {
   const obj = {
     mode: "light",
   };
-
+  //wtf is this?????????????
   const messengers = [
     {
       id: 0,
       idUser: 0,
       Author: true,
-      content: "Đây là tin nhắn 1",
+      content: "Are u alright?",
       deleted: false,
       isReact: true,
       endMess: false,
@@ -384,7 +378,7 @@ const F = (() => {
       id: 1,
       idUser: 0,
       Author: false,
-      content: "Đây là tin nhắn 2",
+      content: "Im fine worries",
       deleted: false,
       isReact: false,
       endMess: true,
@@ -393,7 +387,7 @@ const F = (() => {
       id: 2,
       idUser: 1,
       Author: true,
-      content: "Đây là tin nhắn 3",
+      content: "Hey i can pay 4 bitcoin for that nft ? what do u say?",
       deleted: false,
       isReact: true,
       endMess: false,
@@ -402,7 +396,7 @@ const F = (() => {
       id: 3,
       idUser: 1,
       Author: false,
-      content: "Đây là tin nhắn 4",
+      content: "NO way i have already sold it",
       deleted: false,
       isReact: false,
       endMess: true,
@@ -411,7 +405,7 @@ const F = (() => {
       id: 4,
       idUser: 2,
       Author: false,
-      content: "Đây là tin nhắn 5",
+      content: "i cant...",
       deleted: false,
       isReact: true,
       endMess: false,
@@ -420,7 +414,7 @@ const F = (() => {
       id: 5,
       idUser: 2,
       Author: true,
-      content: "Đây là tin nhắn 6",
+      content: "WDYM?",
       deleted: false,
       isReact: true,
       endMess: true,
