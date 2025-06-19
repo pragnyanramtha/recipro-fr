@@ -14,7 +14,11 @@ const newfeeds = JSON.parse(localStorage.getItem("newfeeds")) || [];
 const users = JSON.parse(localStorage.getItem("users")) || [];
 const comments = JSON.parse(localStorage.getItem("comments")) || [];
 
-//xem thêm, ấn bớt item layout trái
+
+console.log(users);
+
+console.log(users.at(-1).firstName)
+
 for (let i = 0; i < moreBtn.length; i++) {
     moreBtn[i].onclick = function () {
         this.style.display = "none";
@@ -46,7 +50,7 @@ const compactNumber = (value) => {
     return shortValue + suffixes[suffixNum];
 };
 
-//render danh sách liên hệ
+
 const userOnline = (() => {
     const uersOnl = [
         {
@@ -82,6 +86,7 @@ const userOnline = (() => {
             name: "Van newman",
         },
     ];
+
 
     return {
         render() {
@@ -295,8 +300,8 @@ const app = (() => {
                             <div style="display: ${
                                 cmts.length ? "flex" : "none"
                             }" class="newsfeed__respond-right">
-                                <span>${cmts.length} comment</span>
-                                <span>${newfeed.share} shares</span>
+                                <span>${cmts.length} Comments</span>
+                                <span>${newfeed.share} Shares</span>
                             </div>
                         </div>
     
@@ -315,7 +320,7 @@ const app = (() => {
                             </li>
                             <li class="newsfeed__action-item comment-action">
                                 <i class="far fa-comment-alt newsfeed__action-item-icon"></i>
-                                <span class="newsfeed__action-item-text">Commentn</span>
+                                <span class="newsfeed__action-item-text">Comment</span>
                             </li>
                             <li class="newsfeed__action-item">
                                 <i class="fas fa-share newsfeed__action-item-icon"></i>
@@ -329,7 +334,7 @@ const app = (() => {
                                 <div class="newsfeed__comment-box">
                                     <input data-index=${
                                         newfeed.id
-                                    } type="text" placeholder="Share your thoughts" class="newsfeed__comment-input">
+                                    } type="text" placeholder="Share your thoughts ..." class="newsfeed__comment-input">
                                     <div class="newsfeed__comment-box-right">
                                         <div class="newsfeed__comment-box-icon test">
                                             <i class="far fa-laugh-beam"></i>
@@ -490,9 +495,9 @@ const app = (() => {
                                                                             )
                                                                                 ? "active"
                                                                                 : ""
-                                                                        }">Like</span>
+                                                                        }">Thích</span>
                                                                         •
-                                                                        <span class="commented-box__item-reaction--respond">dislike</span>
+                                                                        <span class="commented-box__item-reaction--respond">Phản hồi</span>
                                                                     </div>
                                                                     <div style="display : ${
                                                                         cmt2.like
@@ -542,7 +547,7 @@ const app = (() => {
             } else {
                 htmls = `
                     <div class="newfeed-list--no-tus">
-                        hidden17
+                        There are no posts yet.
                     </div>
                 `;
             }
@@ -620,7 +625,7 @@ const app = (() => {
                                 </div>
                                 <i class="fas fa-circle"></i> 
                                 <span>
-                                    1 post
+                                    1 phút
                                 </span> 
                             </div>
                         </div>
@@ -692,7 +697,7 @@ const app = (() => {
                 document.body.style.overflow = "hidden";
             }
 
-            //đăng xuất
+          
             $(".nav-logout").onclick = function () {
                 users.forEach((user) => {
                     user.isLogin = false;
@@ -702,9 +707,9 @@ const app = (() => {
                 this.querySelector("a").click();
             };
 
-            //mở đóng box
+       
             function showBox() {
-                showOverplay(); 
+                showOverplay();
                 checkSubmit();
             }
             newPostBtns.forEach((newPostBtn) => {
@@ -717,7 +722,7 @@ const app = (() => {
                 closeOverplay();
             };
 
-            //clear post box
+            
             function clearNewPost() {
                 textAreaBox.value = null;
                 imgPostBox.src = "";
@@ -822,9 +827,9 @@ const app = (() => {
                         );
                         cuteAlert({
                             type: "question",
-                            title: "are u sure?",
-                            message: "Are u sure u wanna do this?",
-                            confirmText: "Confirm",
+                            title: "Delete post?",
+                            message: "Are you sure you want to delete this post?",
+                            confirmText: "Delete",
                             cancelText: "Cancel",
                         }).then((e) => {
                             if (e) {
@@ -864,11 +869,11 @@ const app = (() => {
                             );
                         if (boxCmt.classList.contains("active")) {
                             showHideCmt.querySelector("span").innerHTML =
-                                "hidden18";
+                                "see more";
                             boxCmt.classList.remove("active");
                         } else {
                             showHideCmt.querySelector("span").innerHTML =
-                                "hidden19";
+                                "collapse";
                             boxCmt.classList.add("active");
                         }
                     }
@@ -877,9 +882,9 @@ const app = (() => {
                         const id = deleteCmt.dataset.index;
                         cuteAlert({
                             type: "question",
-                            title: "are u sure?",
-                            message: "are u sure u wanna do this",
-                            confirmText: "Confirm",
+                            title: "Delete comment?",
+                            message: "Are you sure you want to delete this comment?",
+                            confirmText: "Delete",
                             cancelText: "Cancel",
                         }).then((e) => {
                             if (e) {
@@ -902,7 +907,7 @@ const app = (() => {
                 };
             });
 
-            //check có đăng bài được hay không
+            
             function checkSubmit() {
                 const value = textAreaBox.value;
                 if (value || imgPostBox.style.display != "none") {
@@ -945,12 +950,12 @@ const app = (() => {
                 checkSubmit();
             };
 
-            //check xem có text hay không
+            
             textAreaBox.oninput = function () {
                 checkSubmit();
             };
 
-            //đăng bài
+            
             postBtn.onclick = () => {
                 if (_this.editMode) {
                     const editPost = $(".edit-post.active");
